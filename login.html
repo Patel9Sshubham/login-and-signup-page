@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            background-image: url('task1.jpg');
+            background-repeat: no-repeat;
+            background: url('reg4.jpg');
+            background-repeat: no-repeat;
+            background-size: 1300px 700px;
+
+        }
+        h1{
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .navbar{
+            background-color: black;
+            border-radius: 12px;
+        }
+        .navbar ul {
+             overflow: auto;
+        }
+        .navbar li { 
+            float: left;
+            list-style: none;
+        }
+        .navbar li{
+            padding: 3px 3px ;
+            margin: 8px 10px;
+            font-size: 30px;
+        }
+        .navbar li a{
+            padding: 3px 6px ;
+            text-decoration: none;
+            color: red;
+            font-size: 30px;
+        }
+        .navbar li a:hover, .navbar li a:active{
+        text-decoration: underline;
+        color: gray;}
+        .search{
+            float: right;
+            color: aliceblue;
+            padding: 8px 3px;
+            margin: 9px 5px;
+        }
+
+        .container{
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            font-size: 30px;
+        }
+        form{
+            /* width: 150px 50px; */
+            margin: 10px 199px;
+            padding: 40px 80px;
+            align-items: center;
+            display: inline-block;
+        }
+        input[type=text],input[type=password]{
+            width: 300px;
+            margin: 8px 0px;
+            /* display: inline-block; */
+            border: 5px solid white;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        button a:hover , button a:active{
+            color: gray;
+            text-decoration: underline;
+        }
+        button{
+            background-color: red;
+            width: 100px;
+            padding: 5px;
+            text-align: center;
+            margin: 10px,0px;
+            display: inline;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1><b>Student Login Page</b></h1>
+        <nav class="navbar">
+            <ul>
+                <li>INTERN CROWD</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">login</a></li>
+                <div>
+                    <div class="search">
+                        <input type="text" name="search" id="search" placeholder="this is website">
+                    </div>
+                </div>
+            </ul>
+        </nav>
+
+    <form>
+        <div class="container">
+            <label>Username:-</label><br>
+            <input type="text" placeholder="Enter Username">
+            <br>
+
+            <label>Password:-</label><br>
+            <input type="password" placeholder="Enter Password"><br>
+            <input type="checkbox" checked="checked">Rememberd me <br>
+            <button type="submit">Login</button><br>
+            <button type="submit"><a href="regestation.html">Register</a></button><br>
+            <!-- <button type="button" class="cancelbtn">cancle</button><br> -->
+            Forgot <a href="#">Password</a>
+
+        </div>
+    </form>
+    
+</body>
+</html>

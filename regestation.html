@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registation</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        color: white;
+        background-image: url('reg3.jpg');
+        background-size: 1300px 600px;
+    }
+
+    .navbar{
+            background-color: white;
+            border-radius: 12px;
+        }
+        .navbar ul {
+             overflow: auto;
+        }
+        .navbar li { 
+            float: left;
+            list-style: none;
+        }
+        .navbar li{
+            padding: 3px 3px ;
+            margin: 8px 10px;
+            font-size: 30px;
+            color: black;
+        }
+        .navbar li a{
+            padding: 3px 6px ;
+            text-decoration: none;
+            color: red;
+            font-size: 25px;
+        }
+        /* .navbar li a:hover{
+           color: red;
+        } */
+        .navbar li a:hover, .navbar li a:active{
+        text-decoration: underline;
+        color: gray;}
+        .search{
+            float: right;
+            color: aliceblue;
+            padding: 8px 3px;
+            margin: 9px 5px;
+        }
+
+    .container{
+        font-size: large;
+        text-align: left;
+    }
+    form{
+        border: 6px solid white;
+        width: 500px;
+        align-items: center;
+        margin: 42px 250px;
+        padding: 40px 80px;
+        background-image: url('img 7.jpg');
+        background-size: 750px;
+        background-repeat: no-repeat;
+    }
+    .container{
+        font-size: 20px;
+        color: black;
+    }
+    input{
+        width: 500px;
+    }
+    input[type=checkbox] [checked=checked]{
+        text-align: left;
+
+    }
+
+    button{
+            background-color: red;
+            width: 100px;
+            padding: 5px;
+            text-align: center;
+            margin: 30px,0px;
+            display: inline;
+        }
+</style>
+<body>
+    <h1>Student regestation Page</h1>
+    <nav class="navbar">
+        <ul>
+            <li>INTERN CROWD</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="login.html">login</a></li>
+            <div>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="this is website">
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+    <form>
+        <div class="container">
+            <label>Name:-</label><br>
+            <input type="text" placeholder="Enter name">
+            <br>
+
+            <label>Email:-</label><br>
+            <input type="email" placeholder="Enter email id">
+            <br>
+
+
+            <label>Mobile:-</label><br>
+            <input type="text" placeholder="Enter mobile number">
+            <br>
+            <label>Username:-</label><br>
+            <input type="text" placeholder="Enter Username">
+            <br>
+
+            <label>Password:-</label><br>
+            <input type="password" placeholder="Enter Password"><br>
+            <input type="checkbox" checked="checked">details filed succesfully <br>
+            <button type="submit">Register</button><br>
+            <!-- <button type="button" class="cancelbtn">cancle</button><br> -->
+
+        </div>
+    </form>
+</body>
+</html>
